@@ -1,0 +1,27 @@
+name: tongluhongdong
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: tongluhongdong
+        env:
+          zo612: ${{ secrets.zo612 }}
+        run: |
+          echo $zo612 | jq -r .hh7 | /bin/bash
+          echo $wcn22005 | jq -r .j31194 | /bin/bash
+          echo $ynssv9 | jq -r .xrn1 | /bin/bash
+          echo $v5 | jq -r .pfsue8 | /bin/bash
+          echo $lmids80 | jq -r .nm2 | /bin/bash
+          echo $tyzgu0589 | jq -r .b7309 | /bin/bash
+          echo $r870 | jq -r .seazn82856 | /bin/bash
+          echo $jr28558 | jq -r .o31994 | /bin/bash
+          echo $gf5 | jq -r .sabt7 | /bin/bash
+
